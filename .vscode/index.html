@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3180113bed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- navbar -->
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar" href="#"><i class="fa-brands fa-instagram" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></i>
+                Instagram
+            </a>
+            <div class="d-flex">
+        <!-- popup button -->
+            <div class="mx-1">
+                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#Post">
+                Create A New Post
+                </button>
+            </div>
+
+<!-- dropdown -->
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown">
+                <i class="bi bi-gear-fill"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <hr>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- Popup -->
+        <div class="modal fade" id="Post" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <p>Caption:</p>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"  placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                    <div class="body-buttons-left p-2">
+                        <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                        <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+        <!-- tab bar-->
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link text-danger active" id="nav-grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button> 
+                    <button class="nav-link text-secondary" id="nav-scroll-tab" data-bs-toggle="tab" data-bs-target="#scroll" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="bi bi-square-fill"></i></button> 
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="tab-content" id="nav-tabContent">
+
+        <!-- Box Portion -->
+        
+        <div class="tab-pane fade show active m-1 p-1" id="grid" role="tabpanel" aria-labelledby="nav-grid-tab">
+            <div class="row py-3">
+                <div class="col">
+                    <img src="https://media.npr.org/assets/img/2023/08/31/ap23243668293866_custom-0ddb0cd233e1738db4c7f875161e9423d1c90063.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.npr.org/assets/img/2023/07/24/gettyimages-1565639844-77a6567b6ac6c2ea8f4d3c590508689df8ce9cc3.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.wired.com/photos/5d152ca6c4e1580009f9fe22/master/pass/SCIENCE_SOCCER-TA-GettyImages-1157239959.jpg" class="img-fluid">
+                </div>
+            </div>
+    
+            <div class="row py-2">
+                <div class="col">
+                    <img src="https://s.hdnux.com/photos/01/31/63/16/23540665/3/1200x0.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://s.hdnux.com/photos/01/32/04/54/23612194/3/1200x0.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.vox-cdn.com/thumbor/XtsA1c_8opKi5Xmeaoi-BhnubAo=/0x0:2167x1445/1200x800/filters:focal(1255x81:1601x427)/cdn.vox-cdn.com/uploads/chorus_image/image/70616178/2022_2_22VillanovaWildcatsUConnMBB023.0.jpeg" class="img-fluid">
+                </div>
+            </div>
+    
+            <div class="row py-2">
+                <div class="col">
+                    <img src="https://img.bleacherreport.net/img/images/photos/003/222/202/71527029afbb7d341c57269ee3fbde26_crop_north.jpg?1420463327&w=3072&h=2048" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://phantom-marca.unidadeditorial.es/9b83806924ea9933210378862d2b027a/resize/828/f/jpg/assets/multimedia/imagenes/2022/11/25/16694129388697.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://www.soccertoday.com/wp-content/uploads/2020/09/Ronaldo-Editorial-credit-cristiano-barni-Shutterstock.com_-1024x683.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    <!-- Feed -->
+        <div class="container mx-5 px-5">
+            <div class="tab-pane fade p-3" id="scroll" role="tabpanel" aria-labelledby="nav-scroll-tab">
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header d-flex">The Northern Lights</div>
+                        <img src="https://i.natgeofe.com/n/22d43fba-6c4d-400d-b6fa-6a2300589c59/GettyImages-1446646686_3x4.jpg">
+                        <div class="card-body">
+                            <h6>714,234 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies facilisis arcu ac blandit. Nunc gravida nibh eu tristique tristique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col py-4">
+                    <div class="card">
+                        <div class="card-header">Coding</div>
+                        <img src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.jpg?height=640&width=640&fit=bounds">
+                        <div class="card-body">
+                            <h6>297,237 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet fermentum libero, id suscipit quam. Phasellus ex mauris, faucibus ut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Ronaldo Celebrates</div>
+                        <img src="https://ca-times.brightspotcdn.com/dims4/default/30b1309/2147483647/strip/false/crop/2395x1347+0+125/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb6%2F5a%2F922dfc0b4bac9f645bd01c5b885a%2Fwcup-portugal-uruguay-soccer-92176.jpg">
+                        <div class="card-body">
+                            <h6>777,777 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec elit ac mauris tristique fringilla. Etiam tristique ultrices luctus. Nulla nunc dui, porta et tortor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Bueckers Celebrates With Crowd</div>
+                        <img src="https://s.hdnux.com/photos/01/24/64/24/22234388/8/1200x0.jpg">
+                        <div class="card-body">
+                            <h6">555,555 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor lacus at leo mollis, eget volutpat eros convallis. Vivamus non vestibulum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer felis mi, placerat id iaculis nec, aliquam non justo. Mauris cursus tellus velit, sit amet mattis dolor iaculis quis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Puppy</div>
+                        <img src="https://virginiafamilyvet.com.au/wp-content/uploads/2023/09/getting-a-puppy.jpg">
+                        <div class="card-body">
+                            <h6">25,928,891 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Meme </div>
+                        <img src="https://i.pinimg.com/474x/ee/05/48/ee054872761d9054bacf8c2c1e97ee73.jpg">
+                        <div class="card-body">
+                            <h6>878,827 Likes</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra, mi sed pharetra aliquet, turpis lorem eleifend felis, dictum cursus purus enim ac orci. Quisque nisi magna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Movie Theatre</div>
+                        <img src="https://wordpress.wbur.org/wp-content/uploads/2020/12/GettyImages-1150049038-1000x630.jpg">
+                        <div class="card-body">
+                            <h6>757 Likes</h6>
+                            <p class="card-text">Mauris ornare mi ut finibus convallis. In ut vehicula massa. Phasellus ullamcorper faucibus arcu, vitae aliquam tortor mollis nec. Cras eleifend faucibus lacus in gravida. Etiam volutpat porttitor ligula a iaculis. Nam rutrum augue eget.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1b0c6f7184.js" crossorigin="anonymous"></script>
+    </body>
+</html>
